@@ -44,6 +44,9 @@ using namespace std;
 
 node* mergeSort(node *head) {
     //write your code here
+    if(head == NULL){
+        return head;
+    }
     if(head->next!=NULL){
         node* mid=midpoint(head);
         node* mid_1=mid->next;
